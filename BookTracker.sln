@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTracker-Models", "BookTracker-Models\BookTracker-Models.csproj", "{31D22E7D-A613-4419-A530-0AEC10865745}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTracker-Context", "BookTracker-Context\BookTracker-Context.csproj", "{1AC91267-BB61-4FD7-8B4B-952020FDB155}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTracker-App", "BookTracker-App\BookTracker-App.csproj", "{230B045A-18D1-4D15-977F-91781708A424}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTracker-Sqlite-Migrations", "BookTracker-Sqlite-Migrations\BookTracker-Sqlite-Migrations.csproj", "{714BE767-D110-4AFD-82A1-52F9FB0A8452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookTracker-LocalDb-Migrations", "BookTracker-LocalDb-Migrations\BookTracker-LocalDb-Migrations.csproj", "{BF6C0690-4B7E-42CE-8195-3F5BB2F98FF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31D22E7D-A613-4419-A530-0AEC10865745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D22E7D-A613-4419-A530-0AEC10865745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D22E7D-A613-4419-A530-0AEC10865745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D22E7D-A613-4419-A530-0AEC10865745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC91267-BB61-4FD7-8B4B-952020FDB155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC91267-BB61-4FD7-8B4B-952020FDB155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC91267-BB61-4FD7-8B4B-952020FDB155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC91267-BB61-4FD7-8B4B-952020FDB155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{230B045A-18D1-4D15-977F-91781708A424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230B045A-18D1-4D15-977F-91781708A424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230B045A-18D1-4D15-977F-91781708A424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230B045A-18D1-4D15-977F-91781708A424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714BE767-D110-4AFD-82A1-52F9FB0A8452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714BE767-D110-4AFD-82A1-52F9FB0A8452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714BE767-D110-4AFD-82A1-52F9FB0A8452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714BE767-D110-4AFD-82A1-52F9FB0A8452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6C0690-4B7E-42CE-8195-3F5BB2F98FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6C0690-4B7E-42CE-8195-3F5BB2F98FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6C0690-4B7E-42CE-8195-3F5BB2F98FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6C0690-4B7E-42CE-8195-3F5BB2F98FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {546DC19A-B880-41D0-A2B0-F58B8A26C124}
+	EndGlobalSection
+EndGlobal
