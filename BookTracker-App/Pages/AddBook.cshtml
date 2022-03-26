@@ -1,0 +1,25 @@
+﻿@page
+@model BookTracker_App.Pages.AddBookModel
+@{
+}
+
+<form method="post">
+    <div>
+        <label asp-for="book.Title"></label>
+        <input asp-for="book.Title">
+    </div>
+
+    <div>
+        <label asp-for="book.Author"></label>
+        <input asp-for="book.Author">
+    </div>
+
+    <div>
+        <label asp-for="book.Description"></label>
+        <input asp-for="book.Description">
+    </div>
+
+    <div>
+        <input type="submit" value="Add Book" />
+    </div>
+</form>

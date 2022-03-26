@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTracker-App", "BookTrac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTracker-Sqlite-Migrations", "BookTracker-Sqlite-Migrations\BookTracker-Sqlite-Migrations.csproj", "{714BE767-D110-4AFD-82A1-52F9FB0A8452}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookTracker-LocalDb-Migrations", "BookTracker-LocalDb-Migrations\BookTracker-LocalDb-Migrations.csproj", "{BF6C0690-4B7E-42CE-8195-3F5BB2F98FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTracker-LocalDb-Migrations", "BookTracker-LocalDb-Migrations\BookTracker-LocalDb-Migrations.csproj", "{BF6C0690-4B7E-42CE-8195-3F5BB2F98FF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
