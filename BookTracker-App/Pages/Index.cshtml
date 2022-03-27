@@ -1,7 +1,19 @@
 ﻿@page
+@using BookTracker_Models
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
-<p> The are @ViewData["NumBooks"] Books Available: </p>
+<p> There are @ViewData["NumBooks"] Books Available: </p>
+
+<ul>
+    @foreach (Book item in Model.Books)
+    {
+        <li>
+            <div>
+                <a>@item.Title  </a><a asp-page="EditBook" asp-route-Id="@item.Id">  Edit</a>
+                <p>@item.Description</p>
+            </div> </li>
+    }
+</ul>

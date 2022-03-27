@@ -1,4 +1,5 @@
 ﻿using BookTracker_Context;
+using BookTracker_Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
@@ -12,7 +13,9 @@ namespace BookTracker_App.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-       private readonly  BookContext _db;   
+        private readonly  BookContext _db;   
+
+        public ICollection<Book> Books { get; set; }
          
         public IndexModel(ILogger<IndexModel> logger, BookContext db)
         {
@@ -23,7 +26,9 @@ namespace BookTracker_App.Pages
 
         public void OnGet()
         {
-         ViewData["numBooks"] = _db.Books.Count(); 
+         ViewData["numBooks"] = _db.Books.Count();
+            var bookQuery = _db.Books.Select(pd => pd);
+            Books = bookQuery.ToList();
         }
     }
 }
