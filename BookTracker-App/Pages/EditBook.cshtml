@@ -18,7 +18,8 @@
 
     <div>
         <label asp-for="book.Description"></label>
-        <input asp-for="book.Description">
+        @*<input asp-for="book.Description">  *@      
+        @Html.EditorFor(m => m.book.Description, additionalViewData: new { htmlAttributes = new { @class = "form-control" } })
     </div>
 
     <div>

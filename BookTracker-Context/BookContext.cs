@@ -10,5 +10,6 @@ namespace BookTracker_Context
             :base(options) 
         { }
         public DbSet<Book> Books { get; set; }
+        public DbSet<BookEdition> Editions { get; set; }
     }
 }
