@@ -1,0 +1,38 @@
+﻿@page
+@model BookTracker_App.Pages.AddEditionModel
+@{
+}
+
+<form method="post">
+    <div>
+        <label asp-for="edition.BookId"></label>
+     @*   <input asp-for="edition.BookId"> *@
+        <select asp-for=edition.BookId asp-items="Model.BookList">
+            <option value="">-----Pick a Book------</option>
+        </select>
+    </div>
+    <div>
+        <label asp-for="edition.Title"></label>
+        <input asp-for="edition.Title">
+    </div>
+
+    <div>
+        <label asp-for="edition.Author"></label>
+        <input asp-for="edition.Author">
+    </div>
+
+    <div>
+        <label asp-for="edition.Year"></label>
+        <input asp-for="edition.Year">
+    </div>
+
+    <div>
+        <label asp-for="edition.Synopsis"></label>
+        @* <input asp-for="book.Description">*@
+        @Html.EditorFor(m => m.edition.Synopsis, additionalViewData: new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+
+    <div>
+        <input type="submit" value="Add Book" />
+    </div>
+</form>

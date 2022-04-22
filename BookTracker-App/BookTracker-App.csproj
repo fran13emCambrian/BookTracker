@@ -9,6 +9,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.15">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,6 +22,10 @@
     <ProjectReference Include="..\BookTracker-LocalDb-Migrations\BookTracker-LocalDb-Migrations.csproj" />
     <ProjectReference Include="..\BookTracker-Models\BookTracker-Models.csproj" />
     <ProjectReference Include="..\BookTracker-Sqlite-Migrations\BookTracker-Sqlite-Migrations.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Edition\" />
   </ItemGroup>
 
 </Project>

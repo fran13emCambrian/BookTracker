@@ -6,33 +6,28 @@ using BookTracker_Context;
 using BookTracker_Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Linq;
 
 namespace BookTracker_App.Pages
 {
-    public class EditBookModel : PageModel
+    public class EditEditionModel : PageModel
     {
         private readonly BookContext _db;
+
         [FromForm]
-        public Book book { get; set; }
         public BookEdition edition { get; set; }
 
-
-        public IList<BookEdition> Editions { get; set; }
-
-        public EditBookModel(BookContext db)
+        public EditEditionModel(BookContext ctx)
         {
-            _db = db;
-            // Editions = _db.Editions.ToList(); 
+            _db = ctx;
         }
 
-        public void OnGet([FromQuery] int Id)
+        public void OnGet()
         {
-            book = _db.Books.Where(pd => pd.Id == Id).FirstOrDefault();
         }
-       public void OnPost()
+
+        public void OnPost()
         {
-            _db.Books.Update(book);
+            _db.Add<BookEdition>(edition);
             _db.SaveChangesAsync();
         }
     }

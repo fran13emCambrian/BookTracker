@@ -14,6 +14,19 @@
             <div>
                 <a>@item.Title  </a><a asp-page="EditBook" asp-route-Id="@item.Id">  Edit</a>
                 <p>@item.Description</p>
-            </div> </li>
+            </div>
+        </li>
+
+
     }
 </ul>
+
+<div>
+    <a asp-page="AddBook">  Add New Book</a>
+
+</div>
+
+<div>
+    <a asp-page="AddEdition">  Add New Edition</a>
+
+</div>

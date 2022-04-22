@@ -23,12 +23,14 @@ namespace BookTracker_Models
         [Required]
         public string Title { get; set; }
 
-        public string Edition { get; set; }
+        public string Year { get; set; }
 
         [DataType(DataType.MultilineText)]
+        [Display(Name ="Show little Synopsis")]
         public string Synopsis { get; set; }
 
         [ForeignKey("Book")]
+        [Display(Name = "Book")]
         public int BookId { get; set; }
 
         public Book Book { get; set; }
